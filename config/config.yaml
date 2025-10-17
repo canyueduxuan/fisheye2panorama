@@ -1,0 +1,13 @@
+fisheye_w: 1920
+fisheye_h: 1080
+fisheye_alpha: 0.7383063486422472
+fisheye_beta: 1.0714701824574164
+fisheye_fx: 350.3714013283425
+fisheye_fy: 349.75378107838947
+fisheye_cx: 978.0665699478452
+fisheye_cy: 476.4634297201269
+
+cylinder_w: 1280
+cylinder_h: 320
+cylinder_cx: 640
+cylinder_cy: 290
