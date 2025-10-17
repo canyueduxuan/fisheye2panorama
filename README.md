@@ -45,4 +45,12 @@ git clone https://github.com/canyueduxuan/fisheye2panorama.git
 catkin_make
 
 rosrun fisheye2panorama fisheye2panorama_node
- 
+
+```
+
+## Testing
+
+```bash
+cd ~/catkin_ws/src/fisheye2panorama/dataset
+rosbag play data.bag
+``` 
