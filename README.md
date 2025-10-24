@@ -21,6 +21,8 @@ Convert fisheye camera images into 360° cylindrical panoramas using camera cali
 **Converted 360° cylindrical panorama:**  
 ![Panorama Image](image/panorama.png)
 
+**Video Demo**
+![Video Demo](image/demo.gif)
 ---
 
 ## Applications
