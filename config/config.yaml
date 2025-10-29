@@ -1,3 +1,6 @@
+image_format: "compressed"
+image_topic: "/camera/color/image"
+
 fisheye_w: 1920
 fisheye_h: 1080
 fisheye_alpha: 0.7383063486422472

@@ -56,3 +56,7 @@ rosrun fisheye2panorama fisheye2panorama_node
 cd ~/catkin_ws/src/fisheye2panorama/dataset
 rosbag play data.bag
 ``` 
+
+## In reality
+
+Use [kalibr](https://github.com/ethz-asl/kalibr) to calibrate the eucm-none parameters of your fisheye camera,and put these parameters into `config/config.yaml`,and ensure that the topic name and topic format correspond to the actual situation.

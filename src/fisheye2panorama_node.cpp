@@ -15,6 +15,10 @@
 #include <yaml-cpp/yaml.h>
 
 YAML::Node config = YAML::LoadFile("./src/fisheye2panorama/config/config.yaml");
+
+std::string image_format = config["image_format"].as<std::string>();
+std::string image_topic = config["image_topic"].as<std::string>();
+
 int fisheye_w  = config["fisheye_w"].as<int>();
 int fisheye_h  = config["fisheye_h"].as<int>();
 float fisheye_alpha  = config["fisheye_alpha"].as<float>();
@@ -74,8 +78,8 @@ int main(int argc, char** argv) {
 
     // 创建图像订阅者
     image_transport::ImageTransport it(nh);
-    image_transport::TransportHints hints("compressed");
-    image_transport::Subscriber sub = it.subscribe("/camera/color/image", 1, imageCallback, hints);
+    image_transport::TransportHints hints(image_format);
+    image_transport::Subscriber sub = it.subscribe(image_topic, 1, imageCallback, hints);
     
     for(int H = 0 ;H < cylinder_h;H++)
         for(int W = 0;W <cylinder_w;W++)
