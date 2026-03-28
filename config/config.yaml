@@ -13,4 +13,4 @@ fisheye_cy: 476.4634297201269
 cylinder_w: 1280
 cylinder_h: 320
 cylinder_cx: 640
-cylinder_cy: 290
+cylinder_cy: 290 #如果标定条件限制或者相机质量太垃圾，移动圆柱相机的光轴可以改善效果
